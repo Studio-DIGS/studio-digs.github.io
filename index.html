@@ -1,13 +1,129 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<!-- main styles -->
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./navbar.css">
+
+
+	<!-- BIS UDMINCHO font idk -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho:wght@400;700&family=Press+Start+2P&family=Yuji+Boku&family=Yuji+Syuku&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- used in scroll.js to see if we've scrolled or not -->
+	<div class="top"></div>
+
+	<!-- loading screen -->
+	<div class="loading">
+		<img src="/giphy.gif" alt="spin monkey">
+	</div>
+	
+	<div class="top-nav">
+		<h2 class="nav-title">
+			Asperitas
+		</h2>
+		<div class="nav-links">
+			<a class="link-text" href="#home">Home</a>
+			<a class="link-text" href="#game-gallery">Game</a>
+			<a class="link-text" href="#team">Team</a>
+			<a class="link-text" href="#call-to-action">Newsletter</a>
+		</div>
+	</div>
+
+	<div class="socials">
+		<a href="https://www.instagram.com/studio.digs/" target="_blank" class="socials-icon insta">
+			<div class="camera-border">
+				<div class="camera-lens">
+					<div class="camera-flash">
+					</div>
+				</div>
+			</div>
+		</a>
+		<!-- <a href="https://linktr.ee/studiodigs"  target="_blank" class="socials-icon facebook">
+			L
+		</a> -->
+		<a href="https://twitter.com/studiodigs"  target="_blank" class="socials-icon twitter">
+			<p>X</p>
+		</a>
+		<a href="https://www.tiktok.com/@studiodigs?is_from_webapp=1&sender_device=pc"  target="_blank" class="socials-icon tiktok">
+			<p>d`</p>
+		</a>
+		<a href="https://www.youtube.com/channel/UCrrb-SNAKTfnms2j2HuKdwQ"  target="_blank" class="socials-icon youtube">
+			<div class="youtube-square"></div>
+			<p>|></p>
+		</a>
+	</div>
+
+	<video id="video-background" autoplay loop muted>
+		<source src="./pmb_grass.mp4" type="video/mp4">
+	</video>
+	<section id="home">
+		<div class="title">
+			<h1>Asperitas</h1>
+			<h2>12/25/2023</h2>
+		</div>
+		<img src="/giphy.gif" alt="spin monkey">
+	</section>
+	
+	<section id="game-gallery">
+		<h2>Current Project</h2>
+		<div class="image-info-container">
+			<div class="image">
+				<video autoplay loop>
+					<source src="./sword.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="game-info">
+				<div class="game-title">ABOUT ASPERITAS</div>
+				<p>in a world that’s mostly empty nowadays, things can get lonely - and weird - fast. luckily, as captain you and your crew take care of each other on the migrant, an airship that drifts around to the magical islands that crowd the skies. that is, at least until you pick up piper, an angel who’s not sure of where to go, and his overprotective sister peregrine, and realize there might be a way to get back the way the world truly used to be - as long as you’re up for a little bit of danger, battle, and revealing the mysteries in asperitas. </p>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="team" class="card-section">
+		<a class="card" href="#team">
+			<img src="/giphy.gif" class="card-image" alt="a plant">
+			<h1 class="img-description">Member 1</h1>
+		</a>
+		<a class="card" href="#team">
+			<img src="/giphy.gif" class="card-image" alt="a plant">
+			<h1 class="img-description">Member 2</h1>
+		</a>
+		<a class="card" href="#team">
+			<img src="/giphy.gif" class="card-image" alt="a plant">
+			<h1 class="img-description">Member 3</h1>
+		</a>
+		<a class="card" href="alngo1/team.html">
+			<img src="/giphy.gif" class="card-image" alt="a plant">
+			<h1 class="img-description">Member 4</h1>
+		</a>
+	</section>
+	
+	<section id="3d">
+		<!-- https://www.youtube.com/watch?v=vlpvJLlAu3A
+		https://www.youtube.com/watch?v=k45XcsIc0Ow
+		-->
+		<h1>3d Stuff</h1>
+		<br/>
+		<canvas id="c" width="300px" height="150px"></canvas>
+	</section>
+	
+	<section id="call-to-action">
+
+		<a href="http://eepurl.com/iDKf1U" target="_blank" class="newsletter-button">
+			<p>Join our newsletter for updates and jazz</p>
+		</a>
+	</section>
+</body>
+
+<script type="module" src="./main.js"></script>
+
+
 </html>

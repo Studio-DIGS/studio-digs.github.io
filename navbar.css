@@ -1,0 +1,138 @@
+/* NAV BARS LINKS AND SOCIALS */
+
+.top-nav{
+    z-index: 3;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    width: 100vw;
+    background-color: hsla(0, 0%, 0%, 0.9);
+}
+
+.nav-title{
+    display: block;
+    position: relative;
+    font-weight:bold;
+	letter-spacing: 1rem;
+	color: white;
+	padding: .5rem 2rem;
+    opacity: 0;
+    transform: scale(0.5);
+	transition: all 0.3s ease-in 0.7s;
+    z-index: 3;
+}
+
+.nav-links{
+	/* width: 100vw; */
+	display: flex;
+	justify-content: flex-end;
+}
+
+.link-text{
+	font-size: 2rem;
+	padding: .5rem 2rem;
+	transition: all 0.2s ease;
+}
+.link-text:hover{
+	background-color: blue;
+}
+
+.socials{
+    position: fixed;
+    width: 100vw;
+    top: 94.5vh;
+	display: flex;
+	justify-content: flex-end;
+	z-index: 3;
+    background-color: hsla(0, 0%, 0%, 0.9);
+    /* border: pink 2px solid; */
+}
+
+.socials-icon{
+	width: 2rem;
+	height: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0.4rem;
+	margin: 0.5rem 1rem;
+	transition: 0.5s ease;
+	font-family: 'Press Start 2p', Courier, monospace;
+	font-size: 1rem;
+	border: 2px white solid;
+}
+.socials-icon:hover{
+	transform: translateY(-10px);
+}
+
+.insta{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+}
+
+.insta .camera-border{
+	width: 75%;
+	height: 75%;
+	border: 0.25rem black solid;
+	border-radius: 0.4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.insta .camera-lens{
+	width: 40%;
+	height: 40%;
+	border: 0.25rem black solid;
+	border-radius: 10rem;
+}
+.insta .camera-flash{
+	position: relative;
+	bottom: 60%;
+	left: 120%;
+	width: 10%;
+	height: 10%;
+	border: 0.120rem black solid;
+	border-radius: 4rem;
+	background-color: black;
+}
+
+
+.facebook{
+	width: 2rem;
+	height: 2rem;
+	background-color: green;
+	color: white;
+}
+
+.twitter{
+	background-color: black;
+	color: white;
+}
+.twitter p{
+	position: relative;
+	left: 1px;
+}
+
+.tiktok{
+	background-color: black;
+	text-shadow: -2px -1px #44ccff, 2px 1px red;
+	letter-spacing: -9px;
+}
+
+.youtube{
+	background-color: red;
+}
+.youtube p{	
+	letter-spacing: -11px;
+	position: relative;
+	right: 5.5px;
+}
+.youtube-square{
+	position: absolute;
+	width: 5px;
+	height: 8px;
+	background-color: white;
+}
