@@ -24,7 +24,7 @@
 	padding: .5rem 2rem;
     opacity: 0;
     transform: scale(0.5);
-	transition: all 0.3s ease-in 0.7s;
+	transition: all 0.3s ease-in 0.2s;
 }
 
 .nav-links{

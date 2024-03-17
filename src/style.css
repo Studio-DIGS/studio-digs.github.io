@@ -34,8 +34,15 @@ a{
 	width: 100vw;
 	height: 100vh;
 	background: blue;
-	position: fixed;
-	z-index: 6;
+	position: fixed; 
+	opacity: 1;
+	transition: all 1s ease;
+	z-index: 1;
+}
+
+.monkey-gif{
+	width: 50%;
+	z-index: 1;
 }
 
 section{
@@ -52,11 +59,9 @@ section{
 
 /* HOME PAGE */
 #home{
-	/* background: linear-gradient(mediumpurple, 90%, aqua); */
-	/* background: black; */
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 }
 
@@ -73,7 +78,6 @@ section{
 .title{
 	text-align: center;
 	line-height: 1.5;
-	/* color: lightblue; */
 	color: white;
 	padding: 15vh 0 0 0;
 }
@@ -85,21 +89,11 @@ section{
 	font-weight:bold;
 	letter-spacing: 1vw;
 	transition: all 0.7s ease 0.2s;
-	/* border: 2px solid black; */
 }
 
 .title h2{
-	/* border: 2px solid black; */
 	font-size: 2rem;
 }
-
-.monkey-gif{
-	width: 50%;
-	margin: 0;
-	transition: all 0.7s ease;
-	/* border: 2px solid black; */
-}
-
 
 
 /* NEWSLETTER */
@@ -115,6 +109,8 @@ section{
 	height: 25rem;
 	background-color: aqua;
 	transition: 0.4s ease;
+	overflow: scroll;
+
 }
 
 .newsletter-button:hover{
@@ -126,7 +122,7 @@ section{
 	text-align: center;
 	padding: 12rem 0rem;
 	font-size: 2.5rem;
-	color: black;
+	color: white;
 }
 
 
@@ -150,8 +146,6 @@ section{
 
 .image{
 	width: 100%;
-	/* z-index: 1; */
-	/* background-color: #c589e8; */
 	background-color: black;
 	display: flex;
 	justify-content: center;
@@ -162,10 +156,11 @@ section{
 }
 
 .game-info{
-	/* position: relative; */
 	width: 100%;
 	background-color: #44ccff;
 	padding: 2rem;
+	overflow-y: scroll;
+
 }
 
 .game-title{
@@ -215,7 +210,6 @@ section{
 .card h1{
 	position: relative;
 	text-align: center;
-	/* background: #191308; */
 	color: #fff;
 	visibility: hidden;
 	opacity: 0;

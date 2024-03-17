@@ -41,7 +41,7 @@ export function scroll(){
     window.addEventListener("scroll", function() {
         let elementTarget = document.getElementsByClassName("scroll-from-top")[0];
 
-        if(this.window.scrollY >= (elementTarget.offsetTop + elementTarget.offsetHeight)){
+        if(this.window.scrollY >= (elementTarget.offsetTop + elementTarget.offsetHeight + 50)){
             moveMonkey = true;
             console.log(moveMonkey)
             scrollDownAnimation()
