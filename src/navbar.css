@@ -1,13 +1,18 @@
 /* NAV BARS LINKS AND SOCIALS */
 
+
+
 .top-nav{
-    z-index: 3;
-    position: fixed;
+	position:fixed;
+	top: 0;
     display: flex;
     justify-content: space-between;
     align-content: space-around;
     width: 100vw;
+	height: 7vh;
     background-color: hsla(0, 0%, 0%, 0.9);
+	overflow: hidden;
+
 }
 
 .nav-title{
@@ -20,13 +25,12 @@
     opacity: 0;
     transform: scale(0.5);
 	transition: all 0.3s ease-in 0.7s;
-    z-index: 3;
 }
 
 .nav-links{
-	/* width: 100vw; */
 	display: flex;
 	justify-content: flex-end;
+
 }
 
 .link-text{
@@ -39,14 +43,13 @@
 }
 
 .socials{
-    position: fixed;
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
     width: 100vw;
-    top: 94.5vh;
 	display: flex;
 	justify-content: flex-end;
-	z-index: 3;
     background-color: hsla(0, 0%, 0%, 0.9);
-    /* border: pink 2px solid; */
 }
 
 .socials-icon{
@@ -99,13 +102,6 @@
 	background-color: black;
 }
 
-
-.facebook{
-	width: 2rem;
-	height: 2rem;
-	background-color: green;
-	color: white;
-}
 
 .twitter{
 	background-color: black;

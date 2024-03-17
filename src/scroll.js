@@ -7,7 +7,7 @@ export function scroll(){
         title.style.transform = "translateY(-1000px)";
 
         //animate monkey gif
-        let monkeyGif = document.querySelector(".monkey-gif img");
+        let monkeyGif = document.querySelector(".monkey-gif");
         monkeyGif.style.transform = "translateY(-1000px)";
 
         //animate nav-title
@@ -23,7 +23,7 @@ export function scroll(){
         title.style.transform = "translateY(0em)";
 
         //animate monkey gif
-        let monkeyGif = document.querySelector(".monkey-gif img");
+        let monkeyGif = document.querySelector(".monkey-gif");
         monkeyGif.style.transform = "translateY(0em)";
 
         //animate nav-title
@@ -39,7 +39,7 @@ export function scroll(){
     let nav_transition = nav_title.style.transition
 
     window.addEventListener("scroll", function() {
-        let elementTarget = document.getElementsByClassName("top")[0];
+        let elementTarget = document.getElementsByClassName("scroll-from-top")[0];
 
         if(this.window.scrollY >= (elementTarget.offsetTop + elementTarget.offsetHeight)){
             moveMonkey = true;
