@@ -3,6 +3,7 @@ export function loading(){
 	let monkey = document.querySelector(".monkey-gif");
 	window.addEventListener("load", () =>{
 		loading.style.opacity = "0";
+		loading.style.zIndex = "-1";
 		
 		monkey.style.zIndex = "0";
 		monkey.style.width = "50%";
