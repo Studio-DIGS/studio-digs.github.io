@@ -25,6 +25,10 @@ body {
 	font-size: 1.5rem;
 }
 
+html, body{
+	overflow-x: hidden;
+}
+
 a{
 	color: white;
 	text-decoration: none;
@@ -66,12 +70,12 @@ section{
 }
 
 #video-background{
-	min-width: 100%;
+	width: 100%;
 	min-height: 100%;
 	object-fit: cover;
 	position: fixed;
-	right: 0;
-	bottom: 0;
+	/* right: 0; */
+	/* bottom: 0; */
 	z-index: -1;
 }
 
@@ -190,6 +194,7 @@ section{
 	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
+	overflow: scroll;
 }
 
 
