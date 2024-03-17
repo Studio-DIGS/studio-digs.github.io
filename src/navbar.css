@@ -1,7 +1,5 @@
 /* NAV BARS LINKS AND SOCIALS */
 
-
-
 .top-nav{
 	position:fixed;
 	top: 0;
@@ -21,21 +19,22 @@
     font-weight:bold;
 	letter-spacing: 1rem;
 	color: white;
-	padding: .5rem 2rem;
+	padding: 0rem 2rem;
     opacity: 0;
     transform: scale(0.5);
 	transition: all 0.3s ease-in 0.2s;
+	font-family: 'Yuji Boku', Courier, monospace;
+
 }
 
 .nav-links{
 	display: flex;
 	justify-content: flex-end;
-
 }
 
 .link-text{
-	font-size: 2rem;
-	padding: .5rem 2rem;
+	font-size: 1.75rem;
+	padding: 1rem 2rem;
 	transition: all 0.2s ease;
 }
 .link-text:hover{
