@@ -46,13 +46,13 @@ a{
 }
 
 .monkey-gif{
-	width: 50%;
+	max-width: 50%;
 	z-index: 1;
 }
 
 section{
-	width: 100vw;
-	height: 100vh;
+	max-width: 100vw;
+	min-height: 100vh;
 	z-index: 0;
 }
 
@@ -72,7 +72,7 @@ section{
 }
 
 #video-background{
-	width: 100%;
+	max-width: 100%;
 	min-height: 100%;
 	object-fit: cover;
 	position: fixed;
@@ -89,8 +89,8 @@ section{
 }
 
 .title h1{
-	width: 100%;
-	height: 100%;
+	max-width: 100%;
+	min-height: 100%;
 	font-size: 10vw;
 	font-weight:bold;
 	letter-spacing: 1vw;
@@ -111,8 +111,8 @@ section{
 }
 
 .newsletter-button{
-	width: 90vw;
-	height: 25rem;
+	max-width: 90vw;
+	min-height: 25rem;
 	background-color: aqua;
 	transition: 0.4s ease;
 	overflow: scroll;
@@ -145,8 +145,8 @@ section{
 }
 
 .image-info-container{
-	width: 100%;
-	height: 28rem;
+	max-width: 100%;
+	min-height: 28rem;
 	display: flex;
 }
 
