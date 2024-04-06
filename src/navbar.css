@@ -4,9 +4,10 @@
 	position:fixed;
 	top: 0;
     display: flex;
+	flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-around;
-    max-width: 100vw;
+    width: 100vw;
 	min-height: 7vh;
     background-color: hsla(0, 0%, 0%, 0.9);
 	overflow: hidden;
@@ -24,17 +25,23 @@
     transform: scale(0.5);
 	transition: all 0.3s ease-in 0.2s;
 	font-family: 'Yuji Boku', Courier, monospace;
-
+	
+	
 }
 
 .nav-links{
 	display: flex;
 	justify-content: flex-end;
+	flex-wrap: wrap;
+	gap: 1rem;
+
+	/* on mobile */
+	display: none;
 }
 
 .link-text{
 	font-size: 1.75rem;
-	padding: 1rem 2rem;
+	padding: 1rem 1rem;
 	transition: all 0.2s ease;
 }
 .link-text:hover{
