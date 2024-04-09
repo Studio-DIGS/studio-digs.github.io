@@ -18,6 +18,7 @@
     display: block;
     position: relative;
     font-weight:bold;
+	font-size: 2rem;
 	letter-spacing: 1rem;
 	color: white;
 	padding: 0rem 2rem;

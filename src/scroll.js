@@ -3,8 +3,12 @@ export function scroll(){
     //helper functions to change transforms, transitions not set here are set in the css files
     function scrollDownAnimation(){
         //animate title
-        let title = document.querySelector(".title h1");
+        let title = document.querySelector(".title");
         title.style.transform = "translateY(-1000px)";
+
+        //animate date
+        let date = document.querySelector(".date");
+        date.style.transform = "translateY(-1000px)";
 
         //animate monkey gif
         let monkeyGif = document.querySelector(".monkey-gif");
@@ -19,8 +23,12 @@ export function scroll(){
 
     function scrollUpAnimation(){
         //animate title
-        let title = document.querySelector(".title h1");
+        let title = document.querySelector(".title");
         title.style.transform = "translateY(0em)";
+
+        //animate date
+        let date = document.querySelector(".date");
+        date.style.transform = "translateY(0px)";
 
         //animate monkey gif
         let monkeyGif = document.querySelector(".monkey-gif");
