@@ -166,6 +166,7 @@ section{
 	max-width: 100%;
 	min-height: 28rem;
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .image{
@@ -183,7 +184,7 @@ section{
 	width: 100%;
 	background-color: #44ccff;
 	padding: 2rem;
-	overflow-y: scroll;
+	/* overflow-y: scroll; */
 
 }
 
@@ -208,7 +209,7 @@ section{
 	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
-	overflow-y: scroll;
+	/* overflow-y: scroll; */
 }
 
 .card-section h1{
