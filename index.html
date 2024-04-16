@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="/src/style.css">
 	<link rel="stylesheet" href="/src/navbar.css">
 	<link rel="stylesheet" href="/src/scrollbar.css">
+	<link rel="stylesheet" href="/src/mq.css">
+
 
 
 
@@ -74,42 +76,39 @@
 	</section>
 	
 	<section id="game-gallery">
-		<h1>Current Project</h1>
-		<div class="image-info-container">
-			<div class="image">
-				<video autoplay loop>
-					<source src="./sword.mp4" type="video/mp4">
-				</video>
-			</div>
-			<div class="game-info">
-				<div class="game-title">About Remex Rising</div>
-				<p>Hop Islands, slash foes, and restore balance to a beautiful broken world! In Asperitas experience a unique, sword wielding, combo chaining Roguelike like never before. Venture the towering (and deadly) sky islands on a gambit to reach the summit, the when you die return to your skyfaring vessel the Migrant to bond with your friends, upgrade your abilities, and more! Through it all experience a seamlessly woven story with twists, turns, and a whole helping of heart, backed by a pulse pounding score that’ll keep you in the flow for hours. Top it all off with a meticulous world, striking visuals, and a “just one more run” gameplay loop that we can’t wait to pull back the curtain for you to enjoy! We hope you’ll anticipate Asperitas as we work to bring it to life. </p>
-			</div>
+		<div class="info-text">
+			<div class="game-title"><h1>About Remex Rising</h1></div>
+			<p>Hop Islands, slash foes, and restore balance to a beautiful broken world! In Asperitas experience a unique, sword wielding, combo chaining Roguelike like never before. Venture the towering (and deadly) sky islands on a gambit to reach the summit, the when you die return to your skyfaring vessel the Migrant to bond with your friends, upgrade your abilities, and more! Through it all experience a seamlessly woven story with twists, turns, and a whole helping of heart, backed by a pulse pounding score that’ll keep you in the flow for hours. Top it all off with a meticulous world, striking visuals, and a “just one more run” gameplay loop that we can’t wait to pull back the curtain for you to enjoy! We hope you’ll anticipate Asperitas as we work to bring it to life. </p>
 		</div>
+		<video class="sword-video" autoplay loop>
+			<source src="./sword.mp4" type="video/mp4">
+		</video>
 
 	</section>
 
 	<section id="team" class="card-section">
-		<h1>About the TIM</h1>
+		<h1>About the Team</h1>
 		<p>
 			Studio DIGS started as the idea of two college students, Jacob and Anthony: to create a game that would capture the essential spark of their favorite titles, and like any good idea it’s taken good people! Since its inception Studio Digs has ballooned from that duo to over a dozen UC Davis students, spanning art, computer science, marketing, and more, all with the goal of crafting the world of Asperitas! Hopefully someday soon you’ll travel down that rabbit hole too, and see just how far it goes…
 		</p>
-		<a class="card" href="#team">
-			<img src="/giphy.gif" class="card-image" alt="a plant">
-			<h1 class="img-description">Member 1</h1>
-		</a>
-		<a class="card" href="#team">
-			<img src="/giphy.gif" class="card-image" alt="a plant">
-			<h1 class="img-description">Member 2</h1>
-		</a>
-		<a class="card" href="#team">
-			<img src="/giphy.gif" class="card-image" alt="a plant">
-			<h1 class="img-description">Member 3</h1>
-		</a>
-		<a class="card" href="./team.html">
-			<img src="/giphy.gif" class="card-image" alt="a plant">
-			<h1 class="img-description">Member 4</h1>
-		</a>
+		<div class="cards">
+			<a class="card" href="#team">
+				<img src="/giphy.gif" class="card-image" alt="a plant">
+				<h1 class="img-description">Member 1</h1>
+			</a>
+			<a class="card" href="#team">
+				<img src="/giphy.gif" class="card-image" alt="a plant">
+				<h1 class="img-description">Member 2</h1>
+			</a>
+			<a class="card" href="#team">
+				<img src="/giphy.gif" class="card-image" alt="a plant">
+				<h1 class="img-description">Member 3</h1>
+			</a>
+			<a class="card" href="./team.html">
+				<img src="/giphy.gif" class="card-image" alt="a plant">
+				<h1 class="img-description">Member 4</h1>
+			</a>
+		</div>
 	</section>
 	
 	<!-- <section id="3d">
@@ -122,10 +121,13 @@
 	</section> -->
 	
 	<section id="call-to-action">
-		<h1>SUBSCRIBE TO NEWSLETTER</h1>
-		<p>
-			Want some insights into what we’re working on? Previews of upcoming content? Just want someone emailing you so you feel important? Then join our list, where once a month we’ll deliver that sweet Studio Digs goodness direct from our office to your inbox. It’s like a present from your present self to your future self… and neither of you have to pay for it!
-		</p>
+		<div class="newsletter-text">
+			<h1>Subscribe to our Newsletter</h1>
+			<p>
+				Want some insights into what we’re working on? Previews of upcoming content? Just want someone emailing you so you feel important? Then join our list, where once a month we’ll deliver that sweet Studio Digs goodness direct from our office to your inbox. It’s like a present from your present self to your future self… and neither of you have to pay for it!
+			</p>
+		</div>
+		
 		<div class="button-wrapper">
 			<a href="http://eepurl.com/iDKf1U" target="_blank" class="newsletter-button">
 				<p>Newsletter Forms Here</p>

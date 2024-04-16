@@ -1,0 +1,38 @@
+@media (min-width: 1330px){
+    #game-gallery{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+
+    .sword-video{
+        max-width: 500px;
+        grid-column: 3 / 4;
+    }
+
+    .info-text{
+        background-color: #ffffff;
+        grid-column: 1 / 2;
+        padding: 10rem 10rem;
+    }
+    
+    .info-text p{
+        line-height: 2rem;
+    }
+}
+
+@media (max-width: 1330px){
+    #call-to-action{
+        justify-content: center;
+    }
+
+    .button-wrapper{
+        margin: 0 20px 50px 20px;
+    }
+}
+
+@media (max-width: 400px){
+    .card-section p{
+        padding: 0 25px 50px 25px;
+    }
+}

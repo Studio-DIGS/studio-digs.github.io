@@ -35,6 +35,16 @@ a{
 	text-decoration: none;
 }
 
+h1{
+	font-size: 40px;
+}
+
+p{
+	font-size: 15px;
+	line-height: 1.5rem;
+
+}
+
 .loading{
 	width: 100vw;
 	height: 100vh;
@@ -110,41 +120,53 @@ section{
 /* NEWSLETTER */
 #call-to-action{
 	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	/* padding: 10rem; */
 }
 
-#call-to-action h1{
+.newsletter-text{
+	max-width: 500px;
+	padding: 6rem;
+}
+
+.newsletter-text h1{
 	color: white;
-	padding: 7rem 3rem 0 3rem;
+	padding: 50px 0;
+	line-height: 4rem;
 }
 
-#call-to-action p{
-	padding: 7rem 3rem;
+.newsletter-text p{
 	color: white;
 }
 
 .button-wrapper{
-	width: 100%;
 	display: flex;
+	margin: 0 100px 0 0;
 }
 
 .newsletter-button{
-	max-width: 50vw;
-	min-height: 20vh;
-	background-color: aqua;
+	max-width: 500px;
+	height: 3rem;
+	/* min-height: 100px; */
+	background-color: yellow;
 	transition: 0.4s ease;
-	margin: 3rem;
-
+	padding: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .newsletter-button p{
-	text-align: center;
 	color: black;
-	/* padding: 3rem; */
+	font-size: 30px;
 }
+
 
 .newsletter-button:hover{
 	background-color: blue;
-	scale: 1.1;
 }
 
 
@@ -154,66 +176,54 @@ section{
 #game-gallery{
 	/* background: #320d6d; */
 	background: white;
-}
-
-#game-gallery h1{
-	text-align: center;
-	padding: 2rem;
-	font-size: 3rem;
-}
-
-.image-info-container{
 	max-width: 100%;
 	min-height: 28rem;
 	display: flex;
 	flex-wrap: wrap;
-}
-
-.image{
-	width: 100%;
-	background-color: black;
-	display: flex;
 	justify-content: center;
 }
 
-.image video{
-	width: 25%;
+.sword-video{
+	max-width: 500px;
 }
 
-.game-info{
-	width: 100%;
-	background-color: #44ccff;
-	padding: 2rem;
-	/* overflow-y: scroll; */
-
+.info-text{
+	display: block;
+	width: 500px;
+	background-color: #ffffff;
+	padding: 3rem;
 }
 
 .game-title{
-	font-size: 2rem;
-	line-height: 2rem;
+	line-height: 4rem;
+	padding: 20px 0;
 }
+
+
 
 
 /* CARD SECTION */
-.test-cards{
-	position:relative;
-	top: 10px;
-	font-size: 1.5rem;
-	text-align: center;
-	/* width: 100vw; */
-}
 
 .card-section{
 	background-color: #FFFAFB;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
+	
+	/* flex-wrap: wrap; */
 	/* overflow-y: scroll; */
 }
 
 .card-section h1{
-	font-size: 3rem;
+	text-align: center;
+	padding: 50px;
+}
+
+.card-section p{
+	padding: 0 100px 50px 100px;
+}
+
+.cards{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .card{
@@ -222,7 +232,7 @@ section{
 	background-color: blue;
 	border-radius: 2rem;
 	box-shadow: 5px 5px 5px black;
-	transition: transform 0.2s;
+	transition: all .7 ease;
 }
 
 .card img{
@@ -234,17 +244,18 @@ section{
 	position: relative;
 	text-align: center;
 	color: #fff;
-	visibility: hidden;
 	opacity: 0;
-	transition: opacity .2s, visibility .2s;
+	transition: all .7s ease;
 }
 
 .card:hover{
-	transform: scale(1.1);
+	/* transform: scale(1.1); */
+	background-color: purple;
+
 }
+
 .card:hover h1{
 	opacity: 1;
-	visibility: visible;
 }
 
 
