@@ -5,7 +5,7 @@
     }
 
 
-    .sword-video{
+    #sword-video{
         max-width: 500px;
         grid-column: 3 / 4;
     }

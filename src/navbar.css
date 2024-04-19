@@ -25,7 +25,10 @@
     opacity: 0;
     transform: scale(0.5);
 	transition: all 0.3s ease-in 0.2s;
-	font-family: 'Yuji Boku', Courier, monospace;
+	/* font-family: 'Yuji Boku', Courier, monospace; */
+	font-family: "eb-aramond", serif;
+	font-weight: 400;
+	font-style: normal;
 	
 	
 }

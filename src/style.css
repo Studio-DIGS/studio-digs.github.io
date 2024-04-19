@@ -21,13 +21,18 @@ body {
 
 	/* font-family: 'Yuji Syuku', Courier, monospace; */
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	
 	/* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 	/* font-family: 'BIZ UDMincho', Courier, monospace; */
-	font-size: 1rem;
+	/* font-size: 1rem; */
 }
 
 html, body{
 	overflow-x: hidden;
+}
+
+body{
+	overflow-y: hidden;
 }
 
 a{
@@ -76,13 +81,23 @@ section{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	font-family: 'Yuji Boku', Courier, monospace;
+	/* font-family: 'Yuji Boku', Courier, monospace; */
+	font-family: "eb-garamond", serif;
+	font-weight: 700;
+	font-style: normal;
+	-webkit-text-stroke: 1.5px black;
 	gap: 2rem;
+}
+
+#home h1{
+	/* -webkit-text-stroke: 1px black; */
 }
 
 .monkey-gif{
 	max-width: 75%;
 	z-index: 1;
+	transition: all 0.7s ease;
+
 }
 
 #video-background{
@@ -108,7 +123,7 @@ section{
 }
 
 .date{
-	font-size: 2rem;
+	font-size: 4rem;
 	text-align: center;
 	line-height: 1.5;
 	color: white;
@@ -121,7 +136,7 @@ section{
 #call-to-action{
 	background-color: black;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
 	/* padding: 10rem; */
@@ -129,7 +144,7 @@ section{
 
 .newsletter-text{
 	max-width: 500px;
-	padding: 6rem;
+	padding: 3rem;
 }
 
 .newsletter-text h1{
@@ -153,7 +168,7 @@ section{
 	/* min-height: 100px; */
 	background-color: yellow;
 	transition: 0.4s ease;
-	padding: 50px;
+	padding: 3rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -183,7 +198,7 @@ section{
 	justify-content: center;
 }
 
-.sword-video{
+#sword-video{
 	max-width: 500px;
 }
 
@@ -206,9 +221,6 @@ section{
 
 .card-section{
 	background-color: #FFFAFB;
-	
-	/* flex-wrap: wrap; */
-	/* overflow-y: scroll; */
 }
 
 .card-section h1{
@@ -217,7 +229,7 @@ section{
 }
 
 .card-section p{
-	padding: 0 100px 50px 100px;
+	padding: 0 3rem 50px 3rem;
 }
 
 .cards{
@@ -238,6 +250,11 @@ section{
 .card img{
 	max-width: 100%;
 	min-height: auto;
+}
+
+.img-description{
+	font-size: 2rem;
+
 }
 
 .card h1{
