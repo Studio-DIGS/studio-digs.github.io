@@ -113,9 +113,9 @@ section{
 .title{
 	max-width: 100%;
 	min-height: 100%;
-	font-size: 10rem;
+	font-size: 10vw;
 	font-weight: bold;
-	padding: 2rem;
+	padding: 2rem 0 0 0;
 	letter-spacing: 1vw;
 	transition: all 0.7s ease;
 
@@ -125,7 +125,7 @@ section{
 }
 
 .date{
-	font-size: 5rem;
+	font-size: 7vw;
 	text-align: center;
 	line-height: 1.5;
 	color: white;
