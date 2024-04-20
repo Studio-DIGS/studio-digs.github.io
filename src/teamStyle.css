@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+	color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+a p{
+    color: white;
+    font-size: 20px;
+    padding: 1.5rem;
+}
+
+a{
+    border: 2px solid black;
+    width: 200px;
+}
+
+a:hover{
+    border: 2px solid white;
+}
+
+
+main > h1{
+    font-size: 50px;
+    text-align: center;
+    padding: 4rem;
+}
+
+.team-cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    font-size: 20px;
+}
+
+.member-card{
+    max-width: 300px;
+}
+
+.member-card img{
+    max-width: 200px;
+}

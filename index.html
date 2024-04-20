@@ -14,7 +14,8 @@
 	<!-- font test -->
 	<link rel="stylesheet" href="https://use.typekit.net/kmq7ind.css">
 
-
+	
+	
 	<!-- BIS UDMINCHO font idk -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -81,39 +82,62 @@
 			<div class="game-title"><h1>About Remex Rising</h1></div>
 			<p>Hop Islands, slash foes, and restore balance to a beautiful broken world! In Asperitas experience a unique, sword wielding, combo chaining Roguelike like never before. Venture the towering (and deadly) sky islands on a gambit to reach the summit, the when you die return to your skyfaring vessel the Migrant to bond with your friends, upgrade your abilities, and more! Through it all experience a seamlessly woven story with twists, turns, and a whole helping of heart, backed by a pulse pounding score that’ll keep you in the flow for hours. Top it all off with a meticulous world, striking visuals, and a “just one more run” gameplay loop that we can’t wait to pull back the curtain for you to enjoy! We hope you’ll anticipate Asperitas as we work to bring it to life. </p>
 		</div>
-		<video id="sword-video" autoplay loop muted>
+		<!-- <video id="sword-video" autoplay loop muted>
 			<source src="./sword.mp4" type="video/mp4">
-		</video>
+		</video> -->
 
+		
+		<!-- Container for the image gallery -->
+		<div class="container">
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+			<!-- Full-width images with number text -->
+			<div class="mySlides">
+				<div class="numbertext">1 / 5</div>
+				<img src="./game-images/level.png" style="width:100%">
+			</div>
+		
+			<div class="mySlides">
+				<div class="numbertext">2 / 5</div>
+				<img src="./game-images/maiden.png" style="width:100%">
+			</div>
+		
+			<div class="mySlides">
+				<div class="numbertext">3 / 5</div>
+				<img src="./game-images/shmoov.png" style="width:100%">
+			</div>
+		
+			<div class="mySlides">
+				<div class="numbertext">4 / 5</div>
+				<img src="./game-images/text.png" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">5 / 5</div>
+				<img src="./game-images/among trees.png" style="width:100%">
+			</div>
+		
+			<!-- Next and previous buttons -->
+			<!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+			<!-- Image text -->
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+		</div>
 	</section>
 
-	<section id="team" class="card-section">
-		<h1>About the Team</h1>
-		<p>
-			Studio DIGS started as the idea of two college students, Jacob and Anthony: to create a game that would capture the essential spark of their favorite titles, and like any good idea it’s taken good people! Since its inception Studio Digs has ballooned from that duo to over a dozen UC Davis students, spanning art, computer science, marketing, and more, all with the goal of crafting the world of Asperitas! Hopefully someday soon you’ll travel down that rabbit hole too, and see just how far it goes…
-		</p>
-		<a style="color: black;" href="./team.html">Meet the team</a>
-		<div style="width: 100vw; display:flex; justify-content: center;">
-			<img style="max-width: 500px;" src="./images/two_rizzlers.png" alt="">
+	<section id="team" class="team-section">
+		<div class="team-text">
+			<h1>About the Team</h1>
+			<p>
+				Studio DIGS started as the idea of two college students, Jacob and Anthony: to create a game that would capture the essential spark of their favorite titles, and like any good idea it’s taken good people! Since its inception Studio Digs has ballooned from that duo to over a dozen UC Davis students, spanning art, computer science, marketing, and more, all with the goal of crafting the world of Remex Rising! Hopefully someday soon you’ll travel down that rabbit hole too, and see just how far it goes…
+			</p>
+			<a href="./team.html">Meet the team</a>
 		</div>
-		<!-- <div class="cards">
-			<a class="card" href="#team">
-				<img src="/giphy.gif" class="card-image" alt="a plant">
-				<h1 class="img-description">Member 1</h1>
-			</a>
-			<a class="card" href="#team">
-				<img src="/giphy.gif" class="card-image" alt="a plant">
-				<h1 class="img-description">Member 2</h1>
-			</a>
-			<a class="card" href="#team">
-				<img src="/giphy.gif" class="card-image" alt="a plant">
-				<h1 class="img-description">Member 3</h1>
-			</a>
-			<a class="card" href="./team.html">
-				<img src="/giphy.gif" class="card-image" alt="a plant">
-				<h1 class="img-description">Member 4</h1>
-			</a>
-		</div> -->
+		<img src="./team.png" alt="">
+		
 	</section>
 	
 	<!-- <section id="3d">
@@ -143,6 +167,34 @@
 </body>
 
 <script type="module" src="/src/main.js"></script>
+<script>
+	let slideIndex = 1;
+	showSlides(slideIndex);
 
+	// Next/previous controls
+	function plusSlides(n) {
+		showSlides(slideIndex += n);
+	}
+
+	// Thumbnail image controls
+	function currentSlide(n) {
+		showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+		let i;
+		let slides = document.getElementsByClassName("mySlides");
+		// let dots = document.getElementsByClassName("demo");
+		let captionText = document.getElementById("caption");
+		if (n > slides.length) {slideIndex = 1}
+		if (n < 1) {slideIndex = slides.length}
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		slides[slideIndex-1].style.display = "block";
+		setTimeout(showSlides, 2000);
+		// captionText.innerHTML = slides[slideIndex-1].src;
+	}
+</script>
 
 </html>
